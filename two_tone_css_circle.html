@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang=“en”>
+   	<head>
+   	<meta charset="utf-8">
+   		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <style>
+			ul.quick_links {
+			  list-style: none;
+			  padding: 0;
+			  text-align: center;
+			}
+			ul.quick_links li {
+			  display: inline-block;
+			  list-style-type: none;
+			  padding-left: 34px;
+			}
+			ul.quick_links li a.quick_link {
+			  color: #b20000;
+			  text-align: center;
+			  text-transform: capitalize;
+			}
+			ul.quick_links li a.quick_link .icon {
+			  background: linear-gradient(-90deg, #7F1337, #7F1337 50%, white 50%, #9B1844 50%, #9B1844 50%);
+			  border-radius: 50%;
+			  display: table;
+			  height: 120px;
+			  margin: 0 auto 10px;
+			  width: 120px;
+			}
+			ul.quick_links li a.quick_link .icon i {
+			  color: white;
+			  display: table-cell;
+			  font-size: 60px;
+			  text-align: center;
+			  vertical-align: middle;
+			}
+			ul.quick_links li a.quick_link .text {
+			  font-size: 18px;
+			  line-height: 1.2;
+			  text-align: center;
+			}
+			@media (max-width: 767px) {
+			  ul.quick_links li a.quick_link {
+			    text-align: left;
+			  }
+			  ul.quick_links li a.quick_link .text {
+			    font-size: 16px;
+			  }
+			}
+			ul.quick_links li:first-child {
+			  padding: 0;
+			}
+			@media (max-width: 767px) {
+			  ul.quick_links li {
+			    display: inline-block;
+			    list-style-type: none;
+			    padding-left: 17px;
+			    padding-right: 17px;
+			  }
+			  ul.quick_links li:first-child {
+			    padding-left: 17px;
+			    padding-right: 17px;
+			  }
+			}
+       	</style>
+   	</head>
+
+   	<body>
+        <ul class="quick_links">
+            <li>
+                <a class="quick_link" routerLink="/pretenancy">
+                    <div class="icon"><i class="fas fa-money-bill-alt"></i></div>
+                    <div class="text">new tenancy<br />assessment</div>
+                </a>
+            </li>
+            <li>
+                <a class="quick_link" routerLink="/pretenancy">
+                    <div class="icon"><i class="fas fa-money-bill-alt"></i></div>
+                    <div class="text">New Tenancy<br />Assessment</div>
+                </a>
+            </li>
+        </ul>
+   </body>
+</html>
